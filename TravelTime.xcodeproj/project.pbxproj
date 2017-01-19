@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1022FC31E27692D00F7392A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1022FC21E27692D00F7392A /* String.swift */; };
 		B1039A0E1E1E975B0049E5B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1039A0D1E1E975B0049E5B0 /* AppDelegate.swift */; };
 		B1039A101E1E975B0049E5B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1039A0F1E1E975B0049E5B0 /* ViewController.swift */; };
 		B1039A131E1E975B0049E5B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1039A111E1E975B0049E5B0 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 		B1039A1B1E1E975B0049E5B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1039A191E1E975B0049E5B0 /* LaunchScreen.storyboard */; };
 		B1039A261E1E975B0049E5B0 /* TravelTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1039A251E1E975B0049E5B0 /* TravelTimeTests.swift */; };
 		B1039A311E1E975B0049E5B0 /* TravelTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1039A301E1E975B0049E5B0 /* TravelTimeUITests.swift */; };
+		B1039A561E1EF78D0049E5B0 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1039A491E1EF77A0049E5B0 /* SwiftHTTP.framework */; };
+		B1D71AF71E2795BA002CE07C /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1039A491E1EF77A0049E5B0 /* SwiftHTTP.framework */; };
+		B1D71AF81E2795BA002CE07C /* SwiftHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1039A491E1EF77A0049E5B0 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +36,80 @@
 			remoteGlobalIDString = B1039A091E1E975A0049E5B0;
 			remoteInfo = TravelTime;
 		};
+		B1039A481E1EF77A0049E5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1039A3E1E1EF77A0049E5B0 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFD901619C8D8B500DD99B6;
+			remoteInfo = SwiftHTTP;
+		};
+		B1039A4A1E1EF77A0049E5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1039A3E1E1EF77A0049E5B0 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFD902119C8D8B500DD99B6;
+			remoteInfo = SwiftHTTPTests;
+		};
+		B1039A4C1E1EF77A0049E5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1039A3E1E1EF77A0049E5B0 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958025919E6EEEB003C8218;
+			remoteInfo = SwiftHTTPOSX;
+		};
+		B1039A4E1E1EF77A0049E5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1039A3E1E1EF77A0049E5B0 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958026319E6EEEB003C8218;
+			remoteInfo = SwiftHTTPOSXTests;
+		};
+		B1039A501E1EF77A0049E5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1039A3E1E1EF77A0049E5B0 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C135EC11C4733CD00AA3A01;
+			remoteInfo = SwiftHTTPtvOS;
+		};
+		B1039A521E1EF77A0049E5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1039A3E1E1EF77A0049E5B0 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C135ECA1C4733CE00AA3A01;
+			remoteInfo = SwiftHTTPtvOSTests;
+		};
+		B1039A541E1EF77A0049E5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1039A3E1E1EF77A0049E5B0 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C135FA91C4737E200AA3A01;
+			remoteInfo = SwiftHTTPWatchOS;
+		};
+		B1D71AF91E2795BA002CE07C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1039A3E1E1EF77A0049E5B0 /* SwiftHTTP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BFD901519C8D8B500DD99B6;
+			remoteInfo = SwiftHTTP;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B1D71AFB1E2795BA002CE07C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B1D71AF81E2795BA002CE07C /* SwiftHTTP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B1022FC21E27692D00F7392A /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B1039A0A1E1E975B0049E5B0 /* TravelTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1039A0D1E1E975B0049E5B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1039A0F1E1E975B0049E5B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +124,7 @@
 		B1039A2C1E1E975B0049E5B0 /* TravelTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1039A301E1E975B0049E5B0 /* TravelTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTimeUITests.swift; sourceTree = "<group>"; };
 		B1039A321E1E975B0049E5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1039A3E1E1EF77A0049E5B0 /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftHTTP.xcodeproj; path = "../../SwiftHTTP-master/SwiftHTTP.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D71AF71E2795BA002CE07C /* SwiftHTTP.framework in Frameworks */,
+				B1039A561E1EF78D0049E5B0 /* SwiftHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +179,8 @@
 			children = (
 				B1039A0D1E1E975B0049E5B0 /* AppDelegate.swift */,
 				B1039A0F1E1E975B0049E5B0 /* ViewController.swift */,
+				B1022FC21E27692D00F7392A /* String.swift */,
+				B1039A3E1E1EF77A0049E5B0 /* SwiftHTTP.xcodeproj */,
 				B1039A111E1E975B0049E5B0 /* Main.storyboard */,
 				B1039A171E1E975B0049E5B0 /* Assets.xcassets */,
 				B1039A191E1E975B0049E5B0 /* LaunchScreen.storyboard */,
@@ -128,6 +208,20 @@
 			path = TravelTimeUITests;
 			sourceTree = "<group>";
 		};
+		B1039A3F1E1EF77A0049E5B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1039A491E1EF77A0049E5B0 /* SwiftHTTP.framework */,
+				B1039A4B1E1EF77A0049E5B0 /* SwiftHTTPTests.xctest */,
+				B1039A4D1E1EF77A0049E5B0 /* SwiftHTTP.framework */,
+				B1039A4F1E1EF77A0049E5B0 /* SwiftHTTPOSXTests.xctest */,
+				B1039A511E1EF77A0049E5B0 /* SwiftHTTP.framework */,
+				B1039A531E1EF77A0049E5B0 /* SwiftHTTPtvOSTests.xctest */,
+				B1039A551E1EF77A0049E5B0 /* SwiftHTTP.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +232,12 @@
 				B1039A061E1E975A0049E5B0 /* Sources */,
 				B1039A071E1E975A0049E5B0 /* Frameworks */,
 				B1039A081E1E975A0049E5B0 /* Resources */,
+				B1D71AFB1E2795BA002CE07C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B1D71AFA1E2795BA002CE07C /* PBXTargetDependency */,
 			);
 			name = TravelTime;
 			productName = TravelTime;
@@ -198,6 +294,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = NU6MM4H979;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					B1039A201E1E975B0049E5B0 = {
 						CreatedOnToolsVersion = 8.2;
@@ -224,6 +325,12 @@
 			mainGroup = B1039A011E1E975A0049E5B0;
 			productRefGroup = B1039A0B1E1E975B0049E5B0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B1039A3F1E1EF77A0049E5B0 /* Products */;
+					ProjectRef = B1039A3E1E1EF77A0049E5B0 /* SwiftHTTP.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B1039A091E1E975A0049E5B0 /* TravelTime */,
@@ -232,6 +339,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B1039A491E1EF77A0049E5B0 /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = B1039A481E1EF77A0049E5B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B1039A4B1E1EF77A0049E5B0 /* SwiftHTTPTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPTests.xctest;
+			remoteRef = B1039A4A1E1EF77A0049E5B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B1039A4D1E1EF77A0049E5B0 /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = B1039A4C1E1EF77A0049E5B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B1039A4F1E1EF77A0049E5B0 /* SwiftHTTPOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPOSXTests.xctest;
+			remoteRef = B1039A4E1E1EF77A0049E5B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B1039A511E1EF77A0049E5B0 /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = B1039A501E1EF77A0049E5B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B1039A531E1EF77A0049E5B0 /* SwiftHTTPtvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPtvOSTests.xctest;
+			remoteRef = B1039A521E1EF77A0049E5B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B1039A551E1EF77A0049E5B0 /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = B1039A541E1EF77A0049E5B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B1039A081E1E975A0049E5B0 /* Resources */ = {
@@ -267,6 +426,7 @@
 			files = (
 				B1039A101E1E975B0049E5B0 /* ViewController.swift in Sources */,
 				B1039A161E1E975B0049E5B0 /* TravelTime.xcdatamodeld in Sources */,
+				B1022FC31E27692D00F7392A /* String.swift in Sources */,
 				B1039A0E1E1E975B0049E5B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +459,11 @@
 			isa = PBXTargetDependency;
 			target = B1039A091E1E975A0049E5B0 /* TravelTime */;
 			targetProxy = B1039A2D1E1E975B0049E5B0 /* PBXContainerItemProxy */;
+		};
+		B1D71AFA1E2795BA002CE07C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHTTP;
+			targetProxy = B1D71AF91E2795BA002CE07C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -416,6 +581,7 @@
 		B1039A361E1E975B0049E5B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NU6MM4H979;
 				INFOPLIST_FILE = TravelTime/Info.plist;
@@ -429,6 +595,7 @@
 		B1039A371E1E975B0049E5B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NU6MM4H979;
 				INFOPLIST_FILE = TravelTime/Info.plist;
@@ -516,6 +683,7 @@
 				B1039A371E1E975B0049E5B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1039A381E1E975B0049E5B0 /* Build configuration list for PBXNativeTarget "TravelTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +692,7 @@
 				B1039A3A1E1E975B0049E5B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1039A3B1E1E975B0049E5B0 /* Build configuration list for PBXNativeTarget "TravelTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +701,7 @@
 				B1039A3D1E1E975B0049E5B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

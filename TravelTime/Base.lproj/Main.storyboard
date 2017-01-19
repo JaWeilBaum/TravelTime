@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TravelTime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,76 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rI5-CH-BKS">
+                                <rect key="frame" x="16" y="28" width="343" height="152"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ohne Verkehr Label" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwi-oM-c9O">
+                                        <rect key="frame" x="8" y="8" width="327" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mit Verkehr Label" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toU-k2-36h">
+                                        <rect key="frame" x="8" y="56" width="327" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Differenz Zeit durch Verkehr" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0o-JI-Jby">
+                                        <rect key="frame" x="8" y="104" width="327" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15718288720000001" green="0.35452237730000002" blue="0.71939170360000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="toU-k2-36h" secondAttribute="trailing" constant="8" id="3iQ-RR-4Ce"/>
+                                    <constraint firstItem="N0o-JI-Jby" firstAttribute="top" secondItem="toU-k2-36h" secondAttribute="bottom" constant="8" id="79l-Bt-X5h"/>
+                                    <constraint firstAttribute="bottom" secondItem="N0o-JI-Jby" secondAttribute="bottom" constant="8" id="Em9-d1-xGS"/>
+                                    <constraint firstItem="toU-k2-36h" firstAttribute="top" secondItem="Xwi-oM-c9O" secondAttribute="bottom" constant="8" id="Gfb-yP-tUN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xwi-oM-c9O" secondAttribute="trailing" constant="8" id="KOp-Cr-5wW"/>
+                                    <constraint firstAttribute="height" constant="152" id="Qs5-w1-HMw"/>
+                                    <constraint firstItem="toU-k2-36h" firstAttribute="leading" secondItem="rI5-CH-BKS" secondAttribute="leading" constant="8" id="ZuQ-WD-vwU"/>
+                                    <constraint firstItem="N0o-JI-Jby" firstAttribute="leading" secondItem="rI5-CH-BKS" secondAttribute="leading" constant="8" id="bY9-B6-wic"/>
+                                    <constraint firstItem="Xwi-oM-c9O" firstAttribute="leading" secondItem="rI5-CH-BKS" secondAttribute="leading" constant="8" id="bwN-LW-Sac"/>
+                                    <constraint firstAttribute="trailing" secondItem="N0o-JI-Jby" secondAttribute="trailing" constant="8" id="c7q-q8-rcp"/>
+                                    <constraint firstItem="N0o-JI-Jby" firstAttribute="height" secondItem="Xwi-oM-c9O" secondAttribute="height" id="k27-3z-mOw"/>
+                                    <constraint firstItem="Xwi-oM-c9O" firstAttribute="top" secondItem="rI5-CH-BKS" secondAttribute="top" constant="8" id="r1t-v8-mtM"/>
+                                    <constraint firstItem="toU-k2-36h" firstAttribute="height" secondItem="Xwi-oM-c9O" secondAttribute="height" id="vnB-6Y-Yvi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUX-pk-4VC">
+                                <rect key="frame" x="147" y="226" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Aktulisieren"/>
+                                <connections>
+                                    <action selector="refresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F9P-lX-auw"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uEv-2H-uqw">
+                                <rect key="frame" x="177" y="198" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rI5-CH-BKS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MIv-yN-4wb"/>
+                            <constraint firstItem="rI5-CH-BKS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nhy-s8-tju"/>
+                            <constraint firstItem="rI5-CH-BKS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="z7l-sx-ctt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="differenceLabel" destination="N0o-JI-Jby" id="rg6-7z-7Mv"/>
+                        <outlet property="loading" destination="uEv-2H-uqw" id="iNf-hH-Vyq"/>
+                        <outlet property="outputLabel" destination="Xwi-oM-c9O" id="WHp-yf-NQl"/>
+                        <outlet property="withTrafficLabel" destination="toU-k2-36h" id="PQu-2f-66M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
